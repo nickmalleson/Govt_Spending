@@ -1,4 +1,3 @@
-
 UK Public Spending Visualisation
 ========================================================
 
@@ -38,7 +37,7 @@ treemap(d,
         title.legend="Change (ignore inflation) in spending, 2010/11 - 2011/12")
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+![plot of chunk unnamed-chunk-3](code/figure/unnamed-chunk-3.png) 
 
 
 Another map, this time using hierarchical colours (change 'index')
@@ -53,7 +52,7 @@ treemap(d,
         title.legend="Change (ignore inflation) in spending, 2010/11 - 2011/12")
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+![plot of chunk unnamed-chunk-4](code/figure/unnamed-chunk-4.png) 
 
 
 
