@@ -39,8 +39,19 @@ treemap(d,
         index=c("Department", "Description"), # Columns in order of aggregation
         vSize="spend_2011_12", # Size of rectangles
         type="index",
-        title="UK Government spending by department",
-        title.legend="Change (ignore inflation) in spending, 2010/11 - 2011/12")
+        title="UK Government spending by department")
+
 ```
 
+Finally make a pdf (better for final edits)
+
+```{r}
+pdf ("Spending_Treemap.pdf")
+treemap(d,
+        index=c("Department", "Description"), # Columns in order of aggregation
+        vSize="spend_2011_12", # Size of rectangles
+        type="index",
+        title="UK Government spending by department")
+dev.off()
+```
 
