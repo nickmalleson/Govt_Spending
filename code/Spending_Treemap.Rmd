@@ -22,7 +22,7 @@ d <- read.csv('../data/spending_data.csv')
 
 Make a treemap using percentage change as colour:
 
-```{r}
+```{r treemap1}
 treemap(d,
         index=c("Department", "Description"), # Columns in order of aggregation
         vSize="spend_2011_12", # Size of rectangles
@@ -34,18 +34,17 @@ treemap(d,
 
 Another map, this time using hierarchical colours (change 'index')
 
-```{r}
+```{r treemap2}
 treemap(d,
         index=c("Department", "Description"), # Columns in order of aggregation
         vSize="spend_2011_12", # Size of rectangles
         type="index",
         title="UK Government spending by department")
-
 ```
 
 Finally make a pdf (better for final edits)
 
-```{r}
+```{r treemap2-pdf}
 pdf ("Spending_Treemap.pdf")
 treemap(d,
         index=c("Department", "Description"), # Columns in order of aggregation

@@ -37,7 +37,7 @@ treemap(d,
         title.legend="Change (ignore inflation) in spending, 2010/11 - 2011/12")
 ```
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+![plot of chunk treemap1](figure/treemap1.png) 
 
 
 Another map, this time using hierarchical colours (change 'index')
@@ -48,11 +48,28 @@ treemap(d,
         index=c("Department", "Description"), # Columns in order of aggregation
         vSize="spend_2011_12", # Size of rectangles
         type="index",
-        title="UK Government spending by department",
-        title.legend="Change (ignore inflation) in spending, 2010/11 - 2011/12")
+        title="UK Government spending by department")
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+![plot of chunk treemap2](figure/treemap2.png) 
 
+
+Finally make a pdf (better for final edits)
+
+
+```r
+pdf ("Spending_Treemap.pdf")
+treemap(d,
+        index=c("Department", "Description"), # Columns in order of aggregation
+        vSize="spend_2011_12", # Size of rectangles
+        type="index",
+        title="UK Government spending by department")
+dev.off()
+```
+
+```
+## pdf 
+##   2
+```
 
 
