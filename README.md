@@ -37,7 +37,7 @@ treemap(d,
         title.legend="Change (ignore inflation) in spending, 2010/11 - 2011/12")
 ```
 
-![plot of chunk treemap1](figure/treemap1.png) 
+![plot of chunk treemap1](code/figure/treemap1.png) 
 
 
 Another map, this time using hierarchical colours (change 'index')
@@ -51,7 +51,7 @@ treemap(d,
         title="UK Government spending by department")
 ```
 
-![plot of chunk treemap2](figure/treemap2.png) 
+![plot of chunk treemap2](code/figure/treemap2.png) 
 
 
 Finally make a pdf (better for final edits)
